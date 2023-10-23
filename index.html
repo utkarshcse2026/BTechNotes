@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Notes@BTech.com</title>
+    <link rel="shortcut icon" href="frontend/images/logo.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: black;
+            padding: 10px 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        header img {
+            width: 45px;
+            height: 45px;
+            margin-left: 15px;
+        }
+
+        h2 {
+            color: whitesmoke;
+            font-style: italic;
+            margin: 5px;
+        }
+        h4 {
+
+            color:  whitesmoke;
+            font-style: italic;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: cursive;
+
+        }
+
+
+        h5 {
+            color:  whitesmoke;
+            font-style: italic;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: cursive;
+
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: whitesmoke;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        a.button:hover {
+            background-color: grey;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropbtn {
+            background-color: whitesmoke;
+            color: black;
+            padding: 12px;
+            font-size: 16px;
+            font-family: cursive;
+            font-weight: bold;
+            border: toggleDropdown;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: grey;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: white;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.ico" alt="Site Logo">
+        <h2>Notes@BTech</h2>
+        &nbsp;
+        &nbsp;
+        <a href="https://www.linkedin.com/in/utkarshcse26/" class="button" download>Contact Site Owner</a>
+        &nbsp;
+        <a href="https://forms.gle/HiZ8iAaEnUrtAbKW6" class="button" download>Submit Your Feedback</a>
+        &nbsp;
+        <a href="https://chat.whatsapp.com/I0rh1P4upPiKah5jczA7TG" class="button" download>Join Our Community</a>
+
+
+    </header>
+
+    <hr>
+  <h4>Hey Students!</h4>
+<h5>Simplify your studies with easy access to downloadable course notes.<br>
+   Select your course from the dropdown menu below and get started.<br>
+<strong>Why Choose Us?</strong> <br>
+Discover high-quality notes curated by top students for accuracy.<br>
+ Access them anytime, anywhere, on any device. We cover a wide range of subjects.<br>
+<strong> Stay Connected </strong>
+Subscribe for updates and valuable study tips to enhance your academic journey. Join us today and excel!</h5>
+
+
+
+    <div class="dropdown">
+        <button class="dropbtn">Select Semester ᐅ</button>
+        <div id="semesterDropdown" class="dropdown-content">
+            <a href="semester1.html">1st Semester</a>
+            <a href="semester2.html">2nd Semester</a>
+            <a href="semester3.html">3rd Semester</a>
+            <a href="semester4.html">4th Semester</a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to handle dropdown toggle
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("semesterDropdown");
+            if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+                dropdownContent.style.display = "block";
+            } else {
+                dropdownContent.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
