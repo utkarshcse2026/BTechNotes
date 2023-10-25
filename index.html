@@ -17,49 +17,35 @@
 
         header {
             background-color: black;
-            padding: 10px 20px;
+            padding: 1rem;
             text-align: center;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
         }
 
         header img {
-            width: 45px;
-            height: 45px;
-            margin-left: 15px;
+            width: 3rem;
+            height: 3rem;
+            margin-left: 1rem;
         }
 
-        h2 {
+        h2, h4, h5 {
             color: whitesmoke;
             font-style: italic;
             margin: 5px;
         }
-        h4 {
 
-            color:  whitesmoke;
-            font-style: italic;
-            font-size: 25px;
+        h4, h5 {
+            font-size: 1.5rem;
             font-weight: bold;
             font-family: cursive;
-
-        }
-
-
-        h5 {
-            color:  whitesmoke;
-            font-style: italic;
-            font-size: 25px;
-            font-weight: bold;
-            font-family: cursive;
-
         }
 
         a.button {
             display: inline-block;
-            padding: 10px 20px;
-            margin-left: auto;
-            margin-right: auto;
+            padding: 0.5rem 1rem;
+            margin: 0 auto;
             background-color: whitesmoke;
             color: black;
             font-weight: bold;
@@ -82,8 +68,8 @@
         .dropbtn {
             background-color: whitesmoke;
             color: black;
-            padding: 12px;
-            font-size: 16px;
+            padding: 1rem;
+            font-size: 1rem;
             font-family: cursive;
             font-weight: bold;
             border: toggleDropdown;
@@ -100,7 +86,7 @@
         }
 
         .dropdown-content a {
-            padding: 12px 16px;
+            padding: 1rem;
             text-decoration: none;
             display: block;
             color: white;
@@ -117,7 +103,7 @@
         hr {
             border: none;
             border-top: 1px solid #ccc;
-            margin: 20px 0;
+            margin: 2rem 0;
         }
     </style>
 </head>
@@ -125,31 +111,25 @@
     <header>
         <img src="images/logo.ico" alt="Site Logo">
         <h2>Notes@BTech</h2>
-        &nbsp;
-        &nbsp;
-        <a href="https://www.linkedin.com/in/utkarshcse26/" class="button" download>Contact Site Owner</a>
-        &nbsp;
-        <a href="https://forms.gle/HiZ8iAaEnUrtAbKW6" class="button" download>Submit Your Feedback</a>
-        &nbsp;
-        <a href="https://chat.whatsapp.com/I0rh1P4upPiKah5jczA7TG" class="button" download>Join Our Community</a>
-
-
+        <div>
+            <a href="https://www.linkedin.com/in/utkarshcse26/" class="button" download>Contact Site Owner</a>
+            <a href="https://forms.gle/HiZ8iAaEnUrtAbKW6" class="button" download>Submit Your Feedback</a>
+            <a href="https://chat.whatsapp.com/I0rh1P4upPiKah5jczA7TG" class="button" download>Join Our Community</a>
+        </div>
     </header>
 
     <hr>
-  <h4>Hey Students!</h4>
-<h5>Simplify your studies with easy access to downloadable course notes.<br>
-   Select your course from the dropdown menu below and get started.<br>
-<strong>Why Choose Us?</strong> <br>
-Discover high-quality notes curated by top students for accuracy.<br>
- Access them anytime, anywhere, on any device. We cover a wide range of subjects.<br>
-<strong> Stay Connected </strong>
-Subscribe for updates and valuable study tips to enhance your academic journey. Join us today and excel!</h5>
-
-
+    <h4>Hey Students!</h4>
+    <h5>Simplify your studies with easy access to downloadable course notes.<br>
+       Select your course from the dropdown menu below and get started.<br>
+    <strong>Why Choose Us?</strong> <br>
+    Discover high-quality notes curated by top students for accuracy.<br>
+     Access them anytime, anywhere, on any device. We cover a wide range of subjects.<br>
+    <strong> Stay Connected </strong>
+    Subscribe for updates and valuable study tips to enhance your academic journey. Join us today and excel!</h5>
 
     <div class="dropdown">
-        <button class="dropbtn">Select Semester ᐅ</button>
+        <button class="dropbtn" onclick="toggleDropdown()">Select Semester ᐅ</button>
         <div id="semesterDropdown" class="dropdown-content">
             <a href="semester1.html">1st Semester</a>
             <a href="semester2.html">2nd Semester</a>
